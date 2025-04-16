@@ -1,90 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>K. Raghunandan Singh - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-      /* Apply Inter font globally */
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-    <script>
-      // Optional: You can configure Tailwind further here if needed
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-          }
-        }
-      }
-    </script>
-</head>
-<body class="bg-gray-100 text-gray-800 antialiased">
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>K. Raghunandan Singh - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Custom styles for profile section */
+			.profile-header {
+				text-align: center;
+				padding: 4rem 0 2rem;
+			}
+			.profile-img {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				object-fit: cover;
+				border: 5px solid white;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+				margin: 0 auto 1.5rem;
+			}
+			.section-card {
+				background: rgba(255, 255, 255, 0.9);
+				padding: 2rem;
+				margin-bottom: 2rem;
+				border-radius: 5px;
+				box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			}
+			.btn-resume {
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 10px 0;
+				cursor: pointer;
+				border-radius: 5px;
+				transition: all 0.3s;
+			}
+			.btn-resume:hover {
+				background-color: #45a049;
+				transform: translateY(-2px);
+			}
+		</style>
+	</head>
+	<body class="is-preload">
 
-<header class="bg-gray-800 text-white py-8 sm:py-12 text-center shadow-lg">
-  <div class="max-w-4xl mx-auto px-4">
-    <h1 class="text-3xl sm:text-4xl font-bold mb-2">K. Raghunandan Singh</h1>
-    <p class="text-lg sm:text-xl text-gray-300">Food Technologist | Consultant | Blogger</p>
-  </div>
-</header>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<main class="max-w-3xl mx-auto py-8 px-4 space-y-6 sm:space-y-8">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>K. Raghunandan Singh</strong> <span>Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-  <section class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">About Me</h2>
-    <p class="text-gray-700 leading-relaxed">
-      I am a passionate food technologist with expertise in food safety, processing, and plant setup. I enjoy applying scientific principles to solve challenges in the food industry and sharing my knowledge to help others grow in this field. My experience includes [mention 1-2 specific areas briefly, e.g., quality assurance protocols, packaging optimization, regulatory compliance].
-    </p>
-  </section>
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="#banner">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#contact" class="button primary fit">Get In Touch</a></li>
+						</ul>
+					</nav>
 
-  <section class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Resume / CV</h2>
-    <p class="text-gray-700 mb-4">
-      For a detailed overview of my professional experience and qualifications, please view my resume:
-    </p>
-    <a href="https://drive.google.com/file/d/1QEicv34yZKnKALG-1RJQ_XeTZ2tNGLih/view" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200 ease-in-out shadow-sm">
-      View Resume
-    </a>
-  </section>
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<div class="profile-header">
+								<img src="https://raw.githubusercontent.com/kraghunandansingh/kraghunandansingh.github.io/2959e01ac2f009f417ec8c847e9419efac141a8f/IMG_7058.jpg" alt="K. Raghunandan Singh" class="profile-img">
+								<h1>K. Raghunandan Singh</h1>
+								<p>Food Technologist | Consultant | Blogger</p>
+							</div>
+							<ul class="actions">
+								<li><a href="#about" class="button next scrolly">Learn More</a></li>
+							</ul>
+						</div>
+					</section>
 
-  <section class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Blog & Learnings</h2>
-    <p class="text-gray-700 leading-relaxed">
-      Coming soon! This section will feature insights from my daily work, experiences in food processing plants, practical food safety tips, and thoughts on industry trends. Stay tuned for updates.
-    </p>
-    </section>
+				<!-- Main -->
+					<div id="main">
 
-  <section class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Consultation Services</h2>
-    <p class="text-gray-700 leading-relaxed">
-      Leveraging my expertise, I offer consultation services for individuals and businesses. If you require assistance with FSSAI licensing, implementing HACCP plans, optimizing food processing operations, or setting up a new food plant, feel free to reach out to discuss your needs.
-    </p>
-    </section>
+						<!-- About Section -->
+							<section id="about" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>About Me</h3>
+										<div class="section-card">
+											<p>I am a passionate food technologist with expertise in food safety, processing, and plant setup. I enjoy applying scientific principles to solve challenges in the food industry and sharing my knowledge to help others grow in this field. My experience includes quality assurance protocols, packaging optimization, and regulatory compliance.</p>
+										</div>
+									</header>
+								</article>
+							</section>
 
-  <section class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Contact</h2>
-    <p class="text-gray-700 leading-relaxed">
-      Get in touch for collaborations, consultations, or inquiries:
-    </p>
-    <p class="mt-2">
-      <span class="font-medium">Email:</span>
-      <a href="mailto:raghunandansingh17@gmail.com" class="text-blue-600 hover:underline">raghunandansingh17@gmail.com</a>
-    </p>
-    </section>
+						<!-- Resume Section -->
+							<section id="resume" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Resume / CV</h3>
+										<div class="section-card">
+											<p>For a detailed overview of my professional experience and qualifications, please view my resume:</p>
+											<a href="https://drive.google.com/file/d/1QEicv34yZKnKALG-1RJQ_XeTZ2tNGLih/view" target="_blank" class="btn-resume">View Resume</a>
+										</div>
+									</header>
+								</article>
+							</section>
 
-</main>
+						<!-- Blog Section -->
+							<section id="blog" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Blog & Learnings</h3>
+										<div class="section-card">
+											<p>Coming soon! This section will feature insights from my daily work, experiences in food processing plants, practical food safety tips, and thoughts on industry trends. Stay tuned for updates.</p>
+										</div>
+									</header>
+								</article>
+							</section>
 
-<footer class="text-center py-6 mt-8 bg-gray-200 text-gray-600 text-sm">
-  <p>&copy; 2025 K. Raghunandan Singh. All rights reserved.</p>
-</footer>
+						<!-- Services Section -->
+							<section id="services" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Consultation Services</h3>
+										<div class="section-card">
+											<p>Leveraging my expertise, I offer consultation services for individuals and businesses. If you require assistance with FSSAI licensing, implementing HACCP plans, optimizing food processing operations, or setting up a new food plant, feel free to reach out to discuss your needs.</p>
+										</div>
+									</header>
+								</article>
+							</section>
 
-</body>
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:raghunandansingh17@gmail.com">raghunandansingh17@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-file-alt"></span>
+										<h3>Resume</h3>
+										<a href="https://drive.google.com/file/d/1QEicv34yZKnKALG-1RJQ_XeTZ2tNGLih/view" target="_blank">View Online</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; K. Raghunandan Singh</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
