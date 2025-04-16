@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>K. Raghunandan Singh - Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #222; color: white; padding: 2rem; text-align: center; }
-    section { max-width: 800px; margin: auto; padding: 2rem; background: white; margin-top: 1rem; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    h2 { border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-    a { color: #0077cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; padding: 1rem; margin-top: 2rem; background: #eee; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>K. Raghunandan Singh - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Apply Inter font globally */
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+    <script>
+      // Optional: You can configure Tailwind further here if needed
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 antialiased">
 
-<header>
-  <h1>K. Raghunandan Singh</h1>
-  <p>Food Technologist | Consultant | Blogger</p>
+<header class="bg-gray-800 text-white py-8 sm:py-12 text-center shadow-lg">
+  <div class="max-w-4xl mx-auto px-4">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-2">K. Raghunandan Singh</h1>
+    <p class="text-lg sm:text-xl text-gray-300">Food Technologist | Consultant | Blogger</p>
+  </div>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>I am a passionate food technologist with expertise in food safety, processing, and plant setup. I love sharing what I learn and helping others grow in this field.</p>
-</section>
+<main class="max-w-3xl mx-auto py-8 px-4 space-y-6 sm:space-y-8">
 
-<section>
-  <h2>Resume</h2>
-  <p>Check out my latest resume here: <a href="https://drive.google.com/file/d/1QEicv34yZKnKALG-1RJQ_XeTZ2tNGLih/view" target="_blank">View Resume</a></p>
-</section>
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">About Me</h2>
+    <p class="text-gray-700 leading-relaxed">
+      I am a passionate food technologist with expertise in food safety, processing, and plant setup. I enjoy applying scientific principles to solve challenges in the food industry and sharing my knowledge to help others grow in this field. My experience includes [mention 1-2 specific areas briefly, e.g., quality assurance protocols, packaging optimization, regulatory compliance].
+    </p>
+  </section>
 
-<section>
-  <h2>Blog & Learnings</h2>
-  <p>Soon, I will be sharing daily learnings, plant experiences, and food safety tips here. Stay tuned!</p>
-</section>
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Resume / CV</h2>
+    <p class="text-gray-700 mb-4">
+      For a detailed overview of my professional experience and qualifications, please view my resume:
+    </p>
+    <a href="https://drive.google.com/file/d/1QEicv34yZKnKALG-1RJQ_XeTZ2tNGLih/view" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200 ease-in-out shadow-sm">
+      View Resume
+    </a>
+  </section>
 
-<section>
-  <h2>Consultation</h2>
-  <p>If you are looking for help with FSSAI licensing, HACCP, or setting up your food processing plant, feel free to reach out.</p>
-</section>
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Blog & Learnings</h2>
+    <p class="text-gray-700 leading-relaxed">
+      Coming soon! This section will feature insights from my daily work, experiences in food processing plants, practical food safety tips, and thoughts on industry trends. Stay tuned for updates.
+    </p>
+    </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:raghunandansingh17@gmail.com">raghunandansingh17@gmail.com</a></p>
-</section>
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Consultation Services</h2>
+    <p class="text-gray-700 leading-relaxed">
+      Leveraging my expertise, I offer consultation services for individuals and businesses. If you require assistance with FSSAI licensing, implementing HACCP plans, optimizing food processing operations, or setting up a new food plant, feel free to reach out to discuss your needs.
+    </p>
+    </section>
 
-<footer>
-  <p>&copy; 2025 K. Raghunandan Singh</p>
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-semibold mb-4 pb-2 border-b border-gray-200">Contact</h2>
+    <p class="text-gray-700 leading-relaxed">
+      Get in touch for collaborations, consultations, or inquiries:
+    </p>
+    <p class="mt-2">
+      <span class="font-medium">Email:</span>
+      <a href="mailto:raghunandansingh17@gmail.com" class="text-blue-600 hover:underline">raghunandansingh17@gmail.com</a>
+    </p>
+    </section>
+
+</main>
+
+<footer class="text-center py-6 mt-8 bg-gray-200 text-gray-600 text-sm">
+  <p>&copy; 2025 K. Raghunandan Singh. All rights reserved.</p>
 </footer>
 
 </body>
